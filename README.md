@@ -1,4 +1,8 @@
 # sample
 a simple login and dashboard  page
 
-U sed React vite and tailwind
+Used React vite and tailwind
+
+node version v18.20.8
+
+npm install -D tailwindcss@latest tailwindcss-cli@latest postcss autoprefixer

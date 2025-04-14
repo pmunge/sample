@@ -22,7 +22,7 @@ export default function Home() {
       <h2 className="text-xl mb-2">ToDo List</h2>
       <div className="flex gap-2 mb-4">
         <input className="flex-1 p-2 border" value={newTask} onChange={e => setNewTask(e.target.value)} placeholder="Add task" />
-        <button className="bg-green-500 text-white px-3 py-1" onClick={addTask}>Add</button>
+        <button className="bg-purple-500 text-white px-3 py-1" onClick={addTask}>Add</button>
       </div>
       <ul>
         {tasks.map(task => (
@@ -32,7 +32,7 @@ export default function Home() {
               value={task.text}
               onChange={(e) => updateTask(task.id, e.target.value)}
             />
-            <button className="bg-red-500 text-white px-2 py-1" onClick={() => deleteTask(task.id)}>Delete</button>
+            <button className="bg-pink-500 text-white px-2 py-1" onClick={() => deleteTask(task.id)}>Delete</button>
           </li>
         ))}
       </ul>
